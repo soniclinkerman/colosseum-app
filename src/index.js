@@ -4,8 +4,6 @@ import './index.css';
 import App from './App';
 import 'tachyons';
 import * as serviceWorker from './serviceWorker';
-import CardList from './components/CardList';
-import {cardTypes} from "./cardTypes";
 
 ReactDOM.render(
   <React.StrictMode>

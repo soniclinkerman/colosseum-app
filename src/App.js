@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import './App.css';
-import {cardTypes} from "./cardTypes";
-import CardList from './components/CardList';
-import Card from './components/Card';
+import {cardTypes} from "./components/cardTypes";
+import CardList from './components/CardList/CardList';
 import 'tachyons';
-import Wrapper from './components/Wrapper';
-import Navigation from './components/Navigation';
-import Footer from './components/Footer';
+import Wrapper from './components/Wrapper/Wrapper';
+import Navigation from './components/Navigation/Navigation';
+import Footer from './components/Footer/Footer';
+import SignIn from './components/Sign-In/SignIn';
 
 class App extends Component{
   constructor(props){
@@ -20,13 +19,14 @@ class App extends Component{
 
 
     return (
-      <div className="tc cards">
+      <div className="tc">
     
-        <Wrapper>
+        {/* <Wrapper>
         <CardList cardTypes={cardTypes}/>
         <Navigation/>
 
-        </Wrapper>
+        </Wrapper> */}
+        <SignIn/>
  
       </div>
     );

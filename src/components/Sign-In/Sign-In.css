@@ -1,0 +1,66 @@
+.title{
+    margin-bottom: 0;
+}
+img {
+    width: 70px;
+}
+
+.form-layout{
+    height: 250px;
+    width: 420px;
+    margin: auto;
+    justify-content: center;
+    border: 2px solid #E3DEDE;
+}
+
+.form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+
+}
+
+.top{
+    margin-bottom: 2em;
+}
+
+.input-type{
+    width: 350px;
+    padding: 0.9em;
+    border: 2px solid #E3DEDE;
+}
+
+.logo{
+    align-self: center;
+    padding: 1em;
+}
+.icon{
+    width: 80px;
+}
+
+.sign-in-title{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.sign-up-section{
+    border: 2px solid #E3DEDE;
+    width: 420px;
+    margin: auto;
+    margin-top: 2em;
+}
+
+.bottom-sec{
+    display: flex;
+    justify-content: space-between;
+    width: 420px;
+    margin: auto;
+    margin-top: 2em;
+}
+
+.copyright{
+    color: #403F3F;
+    opacity: 0.5;
+}

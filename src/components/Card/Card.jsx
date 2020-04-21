@@ -4,14 +4,14 @@ import "./Card.css"
 const Card = ({profile, type, name, exp}) => {
     return(
         <div className ="card dib  ma4 grow shadow-5 card-layout">
-            <img src={profile} className="profile-img"/>
+            <img src={profile} className="profile-img" alt="profile"/>
 
             <div>
                 <h3>Best {name}</h3>
-                <p class="exp">{exp}xp</p>
+                <p className="exp">{exp}xp</p>
             </div>
 
-            <img src={type} className="icon"/>
+            <img src={type} className="icon" alt="icon"/>
 
         </div>
     )
