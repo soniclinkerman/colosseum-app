@@ -64,7 +64,7 @@ img {
     opacity: 0.5;
 }
 
-@media(min-width: 500px){
+@media(min-width: 300px){
 
     .sign-up-section{
         border: none;
@@ -73,8 +73,8 @@ img {
 
     .bottom-sec{
         width: 320px;
-
     }
+  
     
 
 
