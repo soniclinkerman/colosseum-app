@@ -63,3 +63,14 @@ img {
     color: #403F3F;
     opacity: 0.5;
 }
+
+@media(min-width: 500px){
+    .form{
+        padding: 9em;
+       
+    }
+    .icon{
+        width: 10%;
+
+    }
+}
