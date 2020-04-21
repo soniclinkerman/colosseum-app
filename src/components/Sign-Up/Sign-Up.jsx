@@ -6,9 +6,7 @@ import Shield from"../images/Shield.png"
 import People from"../images/People.png"
 const SignIn = () => {
     return(
-        <div className="centering">
-            <div className="form">
-            
+        <div className="form">
             <form className="form-layout">
                 
                 <div className="sign-in-title">
@@ -30,8 +28,6 @@ const SignIn = () => {
                     <p>Don't have an account? <a href="#">Sign up!</a></p>
             </div>
 
-            <input type="submit"/>
-
             <div class="bottom-sec">
             <img src={Shield} class="icon"/>
             <img src={People} class="icon"/>
@@ -41,8 +37,6 @@ const SignIn = () => {
             <footer>
                 <p class="copyright">Zaltick © 2020</p>
             </footer>
-
-            </div>
 
 
         </div>
