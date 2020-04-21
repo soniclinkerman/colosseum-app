@@ -65,9 +65,25 @@ img {
 }
 
 @media(min-width: 500px){
-    .form{
-        padding: 9em;
-       
+
+    .sign-up-section{
+        border: none;
+        margin: 0;
+    }
+
+    .bottom-sec{
+        width: 320px;
+
+    }
+    
+
+
+    .form-layout{
+        border: none;
+    }
+
+    .input-type{
+        padding: 1;
     }
     .icon{
         width: 10%;
