@@ -15,18 +15,37 @@ class App extends Component{
       route: "signIn"
     }
   }
+
+  onRouteChange = (route) =>{
+    this.setState({route: route})
+  }
+
+
+
   render(){
+
 
 
     return (
       <div className="tc">
-    
-        {/* <Wrapper>
+
+        {this.state.route === "home" ?
+
+        <Wrapper>
         <CardList cardTypes={cardTypes}/>
         <Navigation/>
+        </Wrapper> 
+        : (this.state.route === "register") ?
 
-        </Wrapper> */}
-        <SignUp/>
+        <SignUp onRouteChange={this.onRouteChange}/>
+        :
+        <SignIn onRouteChange={this.onRouteChange}/>
+
+        } 
+    
+    
+       
+       
  
  
       </div>

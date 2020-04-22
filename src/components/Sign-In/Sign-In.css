@@ -5,12 +5,15 @@ img {
     width: 70px;
 }
 
-.form-layout{
+.form-layout-sign{
     height: 300px;
     width: 420px;
     border: 2px solid #E3DEDE;
 }
-
+span{
+    color: red;
+    cursor: pointer;
+}
 
 .centering{
     height: 800px;

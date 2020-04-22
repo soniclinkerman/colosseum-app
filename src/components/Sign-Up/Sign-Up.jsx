@@ -5,7 +5,7 @@ import Sword from"../images/Sword.png"
 import Shield from"../images/Shield.png"
 import People from"../images/People.png"
 
-const SignUp = () => {
+const SignUp = ({onRouteChange}) => {
     return(
         <div className="centering">
             <div className="form">
@@ -34,11 +34,17 @@ const SignUp = () => {
                     <input className="input-type" type="password" placeholder="Password"/>
                 </div>
 
-                <input type="submit" class="sub" value="Login"/>
+                <input 
+                onClick={() => onRouteChange("SignIn")}
+                type="submit" class="sub" value="Sign Me Up" o/>
             </form>
 
             <div class="sign-up-section">
-                    <p>Don't have an account? <a href="#">Sign up!</a></p>
+                    <p>Already have an account? <span 
+                    onClick={() => onRouteChange("SignIn")}>
+                        Sign in!
+                        </span>
+                    </p>
             </div>
 
             
