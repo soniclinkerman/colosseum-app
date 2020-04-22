@@ -6,13 +6,13 @@ import Wrapper from './components/Wrapper/Wrapper';
 import Navigation from './components/Navigation/Navigation';
 import Footer from './components/Footer/Footer';
 import SignIn from './components/Sign-In/SignIn';
+import SignUp from './components/Sign-Up/Sign-Up';
 
 class App extends Component{
   constructor(props){
     super(props);
     this.state= {
-   
-      
+      route: "signIn"
     }
   }
   render(){
@@ -26,7 +26,8 @@ class App extends Component{
         <Navigation/>
 
         </Wrapper> */}
-        <SignIn/>
+        <SignUp/>
+ 
  
       </div>
     );

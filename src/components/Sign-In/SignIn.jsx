@@ -24,13 +24,15 @@ const SignIn = () => {
                 <div>
                     <input className="input-type" type="password" placeholder="Password"/>
                 </div>
+
+                <input type="submit" class="sub" value="Login"/>
             </form>
 
             <div class="sign-up-section">
                     <p>Don't have an account? <a href="#">Sign up!</a></p>
             </div>
 
-            <input type="submit"/>
+            
 
             <div class="bottom-sec">
             <img src={Shield} class="icon"/>
