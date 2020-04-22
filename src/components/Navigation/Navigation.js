@@ -2,7 +2,7 @@ import React from "react";
 import "./navigation.css"
 import Logo from "../images/Logo.png"
 
-const Navigation = () => {
+const Navigation = ({onRouteChange}) => {
     return(
         <div>
                 <ul>
