@@ -1,13 +1,19 @@
 import Shield from "./images/Shield.png"
 import Sword from "./images/Sword.png"
 import ProfileIcon from "./images/profile-icon.png"
+import Fox from "./images/Fox.png";
+import Pikachu from "./images/Pikachu.png";
+
 export const cardTypes = [
     {
         id: 1,
         name: "Best Drawing",
         profile: ProfileIcon,
         exp: "50",
-        type: Shield
+        type: Shield,
+        image1: Fox,
+        image2: Pikachu
+
     },
 
     {

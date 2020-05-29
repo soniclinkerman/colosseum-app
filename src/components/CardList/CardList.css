@@ -1,3 +1,11 @@
 .card-list{
     margin-top: 10em;
 }
+
+a{
+    color: #242424;
+}
+
+a:hover{
+    color: #65baf3;
+}
