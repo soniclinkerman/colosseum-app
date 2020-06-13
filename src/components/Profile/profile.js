@@ -6,20 +6,12 @@ import Edit from "./Edit/edit";
 
 
 class Profile extends Component {
-    constructor(props){
-        super(props);
-        this.state={
-            name: ""
-        }
-    }
-
-    onNameChange = (name) => {this.setState({name})}
 
     render(){
         return(
             <div>
                 <Settings/>
-                <Edit onSubmit={this.onNameChange} />
+                <Edit onSubmit={this.props.onNameChange}/>
                 <Header name={this.state.name} />
                 
                 {/* <Header

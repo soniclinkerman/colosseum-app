@@ -12,11 +12,16 @@ class Edit extends Component{
 
     handleInputChange = (e) =>{this.setState({name: e.target.value})}
 
-    handleSubmit = () => this.props.onSubmit(this.state.name);
+    handleSubmit = (e) => {
+        e.preventDefault();
+        this.props.onNameChange(this.state.name)
+    };
 
     render(){
         return(
-               <form>
+            
+               <form onSubmit={this.handleSubmit}>
+                   {/* <h1>Edit Page</h1> */}
                    <input type="text" onChange={this.handleInputChange}/>
 
 

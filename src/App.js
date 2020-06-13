@@ -10,25 +10,27 @@ import Edit from './components/Profile/Edit/edit';
 import Header from './components/Profile/Header/header';
 
 class App extends Component{
-  constructor() {
-    super();
+  constructor(props){
+    super(props);
+    this.state={
+        name: ""
+    }
+}
 
-    this.state = {
-      name: "",
-    };
-  }
-
-  onNameChange = (name) => this.setState({ name });
-  
+onNameChange = (name) => {this.setState({name})}
   render(){
     return (
       <div className="tc">
  
         <Router>
-        <Header name="this.state.name" />
-        <Route render={() => <Edit onSubmit={this.onNameChange} />} /> //local input 
-        {/* {/* <Route path="/profile" exact component={Profile}/> */}
-        {/* <Route path="/profile/edit" exact component={Edit}/> */} */}
+        <Header name={this.state.name} />
+        {/* <Route path="/profile" exact component={Profile}/> */}
+        <Route  path="/profile" exact render={() => <Profile onNameChange={this.onNameChange} />}/>
+        <Route render={() => <Edit onSubmit={this.props.onNameChange} />}/>
+        {/* <Route path="/profile/edit" exact component={Edit}/> */}
+
+
+
           {/* <Route path="/" exact component={Main}/>
           <Route path="/signup" exact component={SignUp}/>
           <Route path="/challenge/:id" component={Challenges}/> */}

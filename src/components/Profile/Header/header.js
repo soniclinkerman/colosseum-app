@@ -4,9 +4,9 @@ import "../profile.css";
 const Header = ({name, username, image, description, hashtag}) => {
     return(
         <div className="profile">
-            {name}
 
-            {/* <div className= "profile-header">
+
+            <div className= "profile-header">
                 <img className ="profile-img" src={image}/>
             </div>
 
@@ -19,7 +19,7 @@ const Header = ({name, username, image, description, hashtag}) => {
                 <p className="description">{description}</p>
             </div>
 
-            <p className="profile-hashtag"><strong>#{hashtag}</strong></p> */}
+            <p className="profile-hashtag"><strong>#{hashtag}</strong></p>
 
         </div>
     )
