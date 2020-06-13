@@ -11,7 +11,7 @@ class Profile extends Component {
         return(
             <div>
                 <Settings/>
-                <Edit onSubmit={this.props.onNameChange}/>
+                <Edit onSubmit={this.onNameChange}/>
                 <Header name={this.state.name} />
                 
                 {/* <Header

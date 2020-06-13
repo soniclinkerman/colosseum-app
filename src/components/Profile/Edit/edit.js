@@ -14,8 +14,8 @@ class Edit extends Component{
 
     handleSubmit = (e) => {
         e.preventDefault();
-        this.props.onNameChange(this.state.name)
-    };
+        this.props.onSubmit(this.state.name)
+    }
 
     render(){
         return(
